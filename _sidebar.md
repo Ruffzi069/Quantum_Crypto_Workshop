@@ -1,4 +1,4 @@
-- [Introduction](/)
+- [Introduction](README.md)
 
 - Quantum Computing
   - [What is a Quantum Computer](content/Quantum_computers.md)
