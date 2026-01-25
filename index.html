@@ -63,18 +63,18 @@
       color: var(--accent-amber);
     }
 
-    /* =====================
-   FLICKER GLOW HEADERS
-===================== */
-h1, h2 {
+    h1, h2 {
   font-family: 'VT323', monospace;
-  color: var(--accent-violet);
-  letter-spacing: 1px;
+  color: #b49cff;
+  letter-spacing: 1.2px;
   position: relative;
+
   text-shadow:
-    0 0 4px rgba(155, 135, 245, 0.25),
-    0 0 10px rgba(155, 135, 245, 0.15);
-  animation: headerFlicker 6s infinite;
+    0 0 6px rgba(180, 156, 255, 0.6),
+    0 0 14px rgba(180, 156, 255, 0.45),
+    0 0 28px rgba(155, 135, 245, 0.35);
+
+  animation: purpleFlicker 4.8s infinite;
 }
 
 
@@ -206,28 +206,34 @@ h1, h2 {
   background: transparent;
 }
 
-    @keyframes headerFlicker {
+    @keyframes purpleFlicker {
   0% {
     opacity: 1;
     text-shadow:
-      0 0 4px rgba(155, 135, 245, 0.25),
-      0 0 10px rgba(155, 135, 245, 0.15);
+      0 0 6px rgba(180, 156, 255, 0.6),
+      0 0 14px rgba(180, 156, 255, 0.45),
+      0 0 28px rgba(155, 135, 245, 0.35);
   }
 
-  2% {
-    opacity: 0.85;
+  3% {
+    opacity: 0.4;
     text-shadow: none;
   }
 
-  4% {
+  6% {
     opacity: 1;
     text-shadow:
-      0 0 6px rgba(155, 135, 245, 0.35),
-      0 0 14px rgba(155, 135, 245, 0.2);
+      0 0 10px rgba(180, 156, 255, 0.9),
+      0 0 26px rgba(180, 156, 255, 0.7),
+      0 0 40px rgba(155, 135, 245, 0.5);
   }
 
-  8% {
-    opacity: 0.95;
+  9% {
+    opacity: 0.7;
+  }
+
+  12% {
+    opacity: 1;
   }
 
   100% {
@@ -235,18 +241,35 @@ h1, h2 {
   }
 }
 
+    h1 {
+  animation-duration: 4s;
+}
 
-    h1::after,
-h2::after {
+h2 {
+  animation-duration: 6s;
+  opacity: 0.95;
+}
+
+
+
+    h1::before,
+h2::before {
   content: attr(data-text);
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--accent-violet);
-  opacity: 0.04;
-  filter: blur(1px);
+  color: #cbbcff;
+  opacity: 0.06;
+  filter: blur(2px);
+  animation: echoShift 4s infinite;
   pointer-events: none;
 }
+
+@keyframes echoShift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(1px, -1px); }
+}
+
 
   </style>
 </head>
