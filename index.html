@@ -53,10 +53,18 @@
     }
 
     .content {
-      flex: 1;
-      padding: 2rem;
-      overflow-y: auto;
-    }
+  flex: 1;
+  padding: 3rem 2rem;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;   /* 🔥 center column */
+  }
+
+    .content-inner {
+  width: 100%;
+  max-width: 820px;   /* 🔥 readable width */
+}
+
 
     h1, h2, h3 {
       font-family: 'VT323', monospace;
@@ -89,7 +97,9 @@
 
   <!-- DOCSIFY CONTENT -->
   <div class="content">
-    <div id="app">Loading…</div>
+    <div class="content-inner">
+      <div id="app">Loading…</div>
+    </div>
   </div>
 
 </div>
