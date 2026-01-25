@@ -48,8 +48,8 @@
       background: #0b0d12;
       border-right: 1px solid #232634;
       display: flex;
-      align-items: center;      /* horizontal centering */
-      justify-content: center;  /* vertical centering */
+      align-items: center;
+      justify-content: center;
     }
 
     .sidebar-inner {
@@ -75,9 +75,9 @@
     }
 
     /* =====================
-       CONTENT WRAPPER
+       MAIN VIEW (RENAMED)
     ====================== */
-    .content {
+    .main-view {
       flex: 1;
       padding: 3rem 2rem;
       overflow-y: auto;
@@ -85,18 +85,11 @@
 
     /* =====================
        DOCSIFY OVERRIDES
-       (THIS FIXES THE SPACING ISSUE)
     ====================== */
     .markdown-section {
-      max-width: 100% !important;
+      max-width: 820px !important;
       padding: 0 !important;
-      margin: 0 !important;
-    }
-
-    .markdown-section > * {
-      max-width: 820px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto !important;
     }
 
     /* =====================
@@ -130,19 +123,23 @@
   <div class="sidebar">
     <div class="sidebar-inner">
       <h1>QC⚛</h1>
-      <a href="content/bb84">Quantum Computers</a>
-      <a href="#/README#quantum--security">Quantum & Security</a>
-      <a href="#/README#why-rsa-is-a-high-value-target">RSA Threat</a>
-      <a href="#/README#breaking-rsa-classical-weaknesses-vs-quantum-breaks">Breaking RSA</a>
-      <a href="#/README#harvest-now-decrypt-later-hn-dl">HN-DL</a>
-      <a href="#/README#quantum-key-distribution-qkd">QKD</a>
-      <a href="#/README#bb84-protocol-what-is-actually-happening">BB84</a>
-      <a href="#/README#post-quantum-cryptography-pqc">PQC</a>
+
+      <!-- Docsify routing -->
+      <a href="#/">Introduction</a>
+      <a href="#/content/quantum_computers">Quantum Computers</a>
+      <a href="#/content/quantum_security">Quantum & Security</a>
+      <a href="#/content/rsa_target">RSA Threat</a>
+      <a href="#/content/breaking_rsa">Breaking RSA</a>
+      <a href="#/content/hndl">HN-DL</a>
+      <a href="#/content/qkd">QKD</a>
+      <a href="#/content/bb84">BB84</a>
+      <a href="#/content/pqc">PQC</a>
+      <a href="#/content/threats_and_closing">Closing</a>
     </div>
   </div>
 
-  <!-- CONTENT -->
-  <div class="content">
+  <!-- DOCSIFY CONTENT -->
+  <div class="main-view">
     <div id="app">Loading…</div>
   </div>
 
