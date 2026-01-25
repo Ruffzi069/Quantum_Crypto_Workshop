@@ -2,27 +2,33 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Quantum Cryptography for Hackers</title>
+  <title>Quantum Crypto for Hackers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Docsify dark base -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
+  <!-- Docsify -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono&display=swap" rel="stylesheet">
 
   <style>
     body {
-      background-color: #0e0f13;
+      margin: 0;
+      background: #0e0f13;
       color: #d6d9e0;
       font-family: 'JetBrains Mono', monospace;
     }
 
-    /* Sidebar */
+    .app {
+      display: flex;
+      height: 100vh;
+    }
+
     .sidebar {
+      width: 260px;
       background: #0b0d12;
       border-right: 1px solid #232634;
-      box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+      padding: 1rem;
     }
 
     .sidebar h1 {
@@ -32,53 +38,59 @@
     }
 
     .sidebar a {
+      display: block;
       color: #9aa0b3;
+      text-decoration: none;
+      margin: 0.4rem 0;
     }
 
     .sidebar a:hover {
       color: #f4c97a;
     }
 
-    /* Headings */
+    .content {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+
     h1, h2, h3 {
       font-family: 'VT323', monospace;
       color: #6ee7e7;
-    }
-
-    /* Code */
-    code {
-      background-color: #10131a;
-      color: #6ee7e7;
-      padding: 2px 5px;
-      border: 1px solid #232634;
-    }
-
-    pre {
-      background-color: #10131a;
-      border-left: 4px solid #6ee7e7;
-      padding: 12px;
-    }
-
-    ::selection {
-      background: #6ee7e7;
-      color: #0e0f13;
     }
   </style>
 </head>
 
 <body>
-  <div id="app">Loading docs...</div>
+<div class="app">
 
-  <script>
-    window.$docsify = {
-      name: 'Quantum Crypto for Hackers',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      sidebarDisplayLevel: 1
-    }
-  </script>
+  <!-- SIDEBAR (MANUAL, NO BUGS) -->
+  <div class="sidebar">
+    <h1>QC⚛</h1>
+    <a href="#/README#what-is-a-quantum-computer">Quantum Computers</a>
+    <a href="#/README#quantum--security">Quantum & Security</a>
+    <a href="#/README#why-rsa-is-a-high-value-target">RSA Threat</a>
+    <a href="#/README#breaking-rsa-classical-weaknesses-vs-quantum-breaks">Breaking RSA</a>
+    <a href="#/README#harvest-now-decrypt-later-hn-dl">HN-DL</a>
+    <a href="#/README#quantum-key-distribution-qkd">QKD</a>
+    <a href="#/README#bb84-protocol-what-is-actually-happening">BB84</a>
+    <a href="#/README#post-quantum-cryptography-pqc">PQC</a>
+  </div>
 
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- DOCSIFY CONTENT -->
+  <div class="content">
+    <div id="app">Loading…</div>
+  </div>
+
+</div>
+
+<script>
+  window.$docsify = {
+    homepage: 'README.md',
+    loadSidebar: false
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
