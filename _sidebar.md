@@ -1,12 +1,12 @@
 - [Introduction](README.md)
 
 - Quantum Computing
-  - [What is a Quantum Computer](content/Quantum_computers.md)
-  - [Quantum & Security](content/Quantum_security.md)
+  - [What is a Quantum Computer](content/quantum_computers.md)
+  - [Quantum & Security](content/quantum_security.md)
 
 - Classical Crypto Under Threat
-  - [Understanding RSA as a Threat](content/RSA_target.md)
-  - [Breaking RSA](content/Breaking_RSA.md)
+  - [Understanding RSA as a Threat](content/rsa_target.md)
+  - [Breaking RSA](content/breaking_rsa.md)
   - [Harvest Now, Decrypt Later](content/hndl.md)
 
 - Quantum Defenses
