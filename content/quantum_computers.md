@@ -28,3 +28,13 @@ You do *not* need to understand the physics to understand the impact.
 - quantum computers excel at problems involving **period finding**
 - they handle **large structured search spaces** extremely well
 - many cryptographic assumptions rely on exactly these problems
+
+
+
+
+
+
+
+
+
+
