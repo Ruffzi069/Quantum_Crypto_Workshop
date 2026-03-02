@@ -1,6 +1,3 @@
-![alt](https://github.com/Ruffzi069/Quantum_Crypto_Workshop/assets/imgintro.png)
-
-
 
 # Quantum Cryptography for Hackers
 
