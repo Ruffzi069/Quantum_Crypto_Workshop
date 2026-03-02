@@ -1,4 +1,4 @@
-## 7. Quantum Key Distribution (QKD)
+## 6. Quantum Key Distribution (QKD)
 
 QKD is the most mature application of quantum cryptography.
 
