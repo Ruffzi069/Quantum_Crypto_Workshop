@@ -18,4 +18,3 @@ after a CTF — casually, with intuition and real-world context.
 
 Use the sidebar to navigate.
 
-<img width="1677" height="1297" alt="INTRO ME" src="https://github.com/user-attachments/assets/cd043ef1-f7dc-4046-b2f1-b2b353dc1450" />
