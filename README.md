@@ -1,4 +1,4 @@
-![alt](https://github.com/Ruffzi069/Quantum_Crypto_Workshop/assets/Screenshot 2026-03-02 093113.png)
+![alt](https://github.com/Ruffzi069/Quantum_Crypto_Workshop/assets/imgintro.png)
 
 
 
