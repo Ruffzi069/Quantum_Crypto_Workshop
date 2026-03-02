@@ -1,4 +1,4 @@
-## 9. Post-Quantum Cryptography (PQC)
+## 8. Post-Quantum Cryptography (PQC)
 
 Quantum cryptography is powerful  
 but difficult to deploy at scale.
