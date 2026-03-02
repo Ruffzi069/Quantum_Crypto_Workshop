@@ -30,6 +30,7 @@ You do *not* need to understand the physics to understand the impact.
 - many cryptographic assumptions rely on exactly these problems
 
 
+<img width="1024" height="1024" alt="ChatGPT Image Mar 2, 2026, 10_14_24 AM" src="https://github.com/user-attachments/assets/b4d22c30-d849-4189-806c-f8a8292fb6a8" />
 
 
 
